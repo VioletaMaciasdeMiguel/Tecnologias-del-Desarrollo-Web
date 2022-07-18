@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>INDEX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Styles/estilos.css" media="screen" />
+        <script type="text/javascript" src="Scripts\PraticaFinal.js"></script>
+    </head>
+    <body class="cuerpo" onload="ArrancaSesion();">
+        
+        <header class="Cabecera" >
+               <h1> Anales de la Ciencia </h1>
+        </header>
+        <form action="../../form-result.php" method="post" target="_blank">
+
+           <p> <input class="logeado" id="Logout" type="button" value="Logout" hidden="hidden" onclick="DesLoguearse();" />
+               <label for="NombreUsuario" class="logeado" id="LNomUsu" hidden="hidden">Usuario:</label>
+               <label for="usuario" class="Sinlogeado" id="Lusuario">Usuario:</label>
+               <input type="text" class="Sinlogeado" name="usuario" id="usuario"  />
+                   
+               <label for="usuario" class="Sinlogeado" id="Lpass">Contraseña:</label>
+               <input type="password" name="pass" class="Sinlogeado" id="pass"/>
+
+               <input id="Login" class="Sinlogeado" type="button" value="Login" onclick="Loguearse();"/>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <input id="Registro" class="Sinlogeado" type="button" value="Registrarse" onclick="CargaRegisUsu(1);"/>
+               <input id="EdiRegistro" class="logeadoWriter" type="button" value="Edita Usuarios" hidden="hidden" onclick="CargaRegisUsu(2);"/>
+           </p>
+
+        </form>
+        <main>
+
+           <table style="width:100%;" id="Sin_logeo" class="Sinlogeado">
+               <tr>
+                   <td style="text-align:center;">
+                       <img alt="imagen ciencia" src="images/metodologia-clasificacion-ciencias.png"  id="ImaCien"/></td>
+               </tr>
+           </table>
+
+
+            <table class="TablaIndex" id="TI" >
+                
+ 
+   
+            </table>        
+      
+        </main>
+    </body>
+</html>
+

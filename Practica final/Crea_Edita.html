@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+   <head>
+        <title> Página de Creación Edición</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Styles/estilos.css" media="screen" />
+        <script type="text/javascript" src="Scripts\PraticaFinal.js"></script>
+
+        <style type="text/css">
+            .style1
+            {
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body class="cuerpo" onload="PaginaCreaEdita();">
+        
+        <header class="Cabecera" >
+             <h1>  Anales de la Ciencia </h1>
+        </header>
+		<nav class="general">
+            <table style="width:35%;">
+                <tr>
+                    <td>
+                    	<a href="index.html" title="Pagina de inicio" ><b>INICIO</b></a>
+			         
+                   </td>
+                    <td>
+                       <input id="Bguarda" type="button" value="Guarda todo" onclick="CompruebaGuardar();" />
+                   </td>
+                    <td>
+                       <label for="NombreUsuario" class="logeado_1" id="LNomUsu_2" >Usuario:</label>
+                   </td>
+                </tr>
+
+            </table>
+
+		</nav>
+		<main >
+
+			<table class="TablaEdiCrea" id="TablaCreaEdita" >
+             
+
+			</table>
+
+       </main>
+       <footer>
+            <table style="width:40%;" id="Ayudas">
+               <tr>
+                   <td  colspan="3">
+                       &nbsp;&nbsp;</td>
+               </tr>
+               <tr>
+                   <td class="style1" colspan="3">
+                       AYUDA PARA IDENTIDADES</td>
+               </tr>
+               <tr>
+                   <td>
+                       Persona ---&gt; ID</td>
+                   <td>
+                       <input id="Tbusca1" type="text" /></td>
+                   <td>
+                       <input id="Bbusca1" type="button" value="Buscar" onclick="AlertPerson_nombre();" /></td>
+               </tr>
+               <tr>
+                   <td>
+                       Entidad ---&gt; ID</td>
+                   <td>
+                       <input id="Tbusca2" type="text" /></td>
+                   <td>
+                       <input id="Bbusca2" type="button" value="Buscar" onclick="AlertEntity_nombre();" /></td>
+               </tr>
+               <tr>
+                   <td>
+                       ID ---&gt; Persona </td>
+                   <td>
+                       <input id="Tbusca3" type="text" /></td>
+                   <td>
+                       <input id="Bbusca3" type="button" value="Buscar" onclick="AlertPerson_id();" /></td>
+               </tr>
+               <tr>
+                   <td>
+                       ID ---&gt; Entidad</td>
+                   <td>
+                       <input id="Tbusca4" type="text" /></td>
+                   <td>
+                       <input id="Bbusca4" type="button" value="Buscar" onclick="AlertEntity_id();" /></td>
+               </tr>
+           </table>
+        </footer>
+    </body>
+</html>

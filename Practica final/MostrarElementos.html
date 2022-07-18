@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+   <head>
+        <title> Página de Muestra de elementos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Styles/estilos.css" media="screen" />
+        <script type="text/javascript" src="Scripts\PraticaFinal.js"></script>
+
+    </head>
+    <body class="cuerpo" onload="PaginaMostrarElementos();">
+        
+        <header class="Cabecera" >
+             <h1>  Anales de la Ciencia </h1>
+        </header>
+		<nav class="general">
+            <table style="width:25%;">
+                <tr>
+                    <td>
+                    	<a href="index.html" title="Pagina de inicio" ><b>INICIO</b></a>
+                   </td>
+                    <td>
+                        <label for="NombreUsuario" class="logeado_1" id="LNomUsu_1" >Usuario:</label>
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                        &nbsp;&nbsp;
+                   </td>                  
+                    <td>
+                        <input id="Bedita" type="button" value="EDITAR elemento" onclick="PasarAEdicion();" />
+                   </td>
+                </tr>
+
+            </table>
+
+		</nav>
+        <main>
+
+			<table class="Tabla1Html" id="TablaMuestra">
+
+            </table>
+        </main>
+        <footer>
+
+			<table style="width:100%;" id="PieDeMostrar">
+
+            </table>
+        </footer>
+ 
+    </body>
+</html>
